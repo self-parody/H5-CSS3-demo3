@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>banner</title>
-    <script src="iconfont.js"></script>
+    <script src="../font_dho5e1axvet/iconfont.js"></script>
     <style>
         *{
             margin: 0;
@@ -17,6 +17,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+  
         }
         .card{
             width: 200px;
@@ -24,7 +25,10 @@
             overflow: hidden;
             box-shadow: 0px 0px 10px rgba(145, 170, 218, 0.63);
             transition: all 1s;
-   
+
+        }
+        .card2{
+            margin-top: 50px;
         }
         .card:hover{
             box-shadow: 0 0 15px rgb(126, 229, 255);
@@ -51,9 +55,10 @@
             opacity: 0.6;
             
         }
-      
-        .card-b{
+       
+        .card-b,.card2-b{
             padding:10px;
+            box-sizing: border-box;
         }
         .card-b>h3{
             font-size: 16px;
@@ -79,6 +84,50 @@
           fill: currentColor;
           overflow: hidden;
           font-size: 22px;
+    
+        }
+        .card2{
+            height: 277px;
+            width: 200px;       
+            border-radius: 10px;
+            overflow: hidden;         
+            position: relative;
+
+        }
+        .card2-c{
+            position: absolute;
+            z-index: 9;
+            
+        }
+        .card2-c img{
+            width: 200px;
+            height: 190px;
+            display: block;    
+            border-radius: 0 0 10px 10px;
+        }
+        .card2-b{
+            height: 87px;
+            width: 100%;
+            background-color: #eee;
+            bottom: 0;
+            transform: translateY(-87px);
+            transition: all 0.5s;
+            position: absolute;
+            border-radius: 0 0 10px 10px;
+        } 
+        .card2:hover .card2-b{
+            transform: translateY(0px);
+        }
+        .card2:hover .card2-c>img{
+            border-radius: 0;
+        }
+        
+        .card2:hover{
+            box-shadow:0 0 10px rgb(177, 172, 248);
+        }
+        .card2-b p{
+            font-size: 14px;
+            color: rgb(94, 139, 223);
         }
     </style>
 </head>
@@ -87,7 +136,7 @@
     <div id="wrapper">
         <div class="card">
             <div class="card-t">
-                <img src="oxxw29.jpg" alt="">
+                <img src="../image/oxxw29.jpg" alt="">
             </div>
             <div class="card-b">
                 <h3>伊索森林
@@ -99,6 +148,18 @@
                 <span>怪物猎人</span>
                 <span>大收藏家</span>
             </div>
+        </div>
+        <div class="card2">
+            <div class="card2-c">       
+                <img src="../image/nvwu.png" alt="">
+            </div>
+            <div class="card2-b">
+                <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-tangguo"></use>
+                 </svg>
+                <p>神出鬼没的小女巫，据说会带来快乐以及食欲……</p>
+            </div>
+           
         </div>
     </div>
 </body>
