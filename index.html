@@ -13,13 +13,14 @@
         }  
         body{
             display:flex;
+            flex-direction:raw;
         .card{
             width: 200px;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0px 0px 10px rgba(145, 170, 218, 0.63);
             transition: all 1s;
-            margin:100px
+            margin:50px;
         }  
         .card:hover{
             box-shadow: 0 0 15px rgb(126, 229, 255);
@@ -74,6 +75,7 @@
         .ani{
             width:180px;
             height: 300px;
+            margin:50px;
             overflow: hidden;
             background: url("./animation.png") 0 0;
             animation: run 1s steps(7,start) infinite;     
